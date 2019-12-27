@@ -5,14 +5,15 @@
     <title>WKdRo</title>
     <style media="screen">
 
-      @media(max-width: 500px){
-
-        body{
-          background: red;
-        }
+      @media(max-width: 700px){
 
         ul{
           float: top;
+          display: flex;
+        }
+
+        .content{
+          flex-direction: column;
         }
       }
 
@@ -26,10 +27,11 @@
       ul{
         width: 200px;
         list-style: none;
-        float: left;
       }
 
-      li{
+      .the{
+        width: 100px;
+        height: 30px;
         padding: 25px;
         margin: 8px;
         background: #558bcf;
@@ -40,18 +42,17 @@
         text-decoration: none;
       }
 
-      li:hover{
+      .the:hover{
         background: blue;
       }
 
       .content{
-          width: 100%;
+          display: flex;
       }
 
       .right{
-        float: center;
-        width: 75%;
         padding: 40px;
+
       }
 
 
@@ -62,20 +63,21 @@
       <h1 style="color: #FFFFFF">China</h1>
     </div>
 
-    <div class="content" style="height: 30%">
+    <div class="content">
         <ul>
-          <li><a href="#flight">The Flight</a></li>
-          <li><a href="#flight">The City</a></li>
-          <li><a href="#flight">The Island</a></li>
-          <li><a href="#flight">The Food</a></li>
+          <li class="the"><a href="#flight">The Flight</a></li>
+          <li class="the"><a href="#flight">The City</a></li>
+          <li class="the"><a href="#flight">The Island</a></li>
+          <li class="the"><a href="#flight">The Food</a></li>
         </ul>
-      <div class="right">
-        <h3>China</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sint iusto est quisquam repellendus libero iure atque pariatur harum quam.
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas pariatur libero architecto perferendis reiciendis, consequatur aut cupiditate ullam minus quaerat soluta enim,
-           fugiat aliquid hic nam cum omnis? Numquam, voluptates.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae sapiente dignissimos autem enim placeat
-           ratione architecto sint est omnis ea reiciendis a ad consequatur ipsam sed sunt pariatur, dolorum corporis natus quia aliquid. Facere rerum sequi pariatur culpa earum.</p>
-      </div>
+      </li>
+        <div class="right">
+          <h3>China</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sint iusto est quisquam repellendus libero iure atque pariatur harum quam.
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas pariatur libero architecto perferendis reiciendis, consequatur aut cupiditate ullam minus quaerat soluta enim,
+             fugiat aliquid hic nam cum omnis? Numquam, voluptates.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae sapiente dignissimos autem enim placeat
+             ratione architecto sint est omnis ea reiciendis a ad consequatur ipsam sed sunt pariatur, dolorum corporis natus quia aliquid. Facere rerum sequi pariatur culpa earum.</p>
+           </div>
     </div>
     <div class="header">
       <p style="color: #FFFFFF">footer</h1>
